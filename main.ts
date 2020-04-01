@@ -17,7 +17,6 @@ totalCreditElm.innerHTML = `${getTotalCredits(dataCourses)}`
 
 
 function renderCoursesInTable(courses: Course[]): void {
-  console.log('Desplegando cursos');
   courses.forEach((course) => {
     let trElement = document.createElement("tr");
     trElement.innerHTML = `<td>${course.name}</td>
